@@ -9,7 +9,7 @@
     <li>Типограф - https://www.artlebedev.ru/typograf/</li>
     <li>Фотохостинг - https://ibb.co/</li>
     <li>Тестирование email - https://htmltest.email/</li>
-    <li>Браузеры телефона и компьютера - chrome, safari, mozilla, explorer</li>
-    <li>Клиенты - десктоп: microsoft outlook; МП: почта майл.</li>
+    <li>Браузеры телефона и компьютера - chrome, safari, mozilla, explorer, а также приложения - десктоп: microsoft outlook; МП: почта майл.</li>
+    <li>Клиенты - Gmail, Yandex, Mail.ru и Outlook 2015</li> 
   </ul>
 </div>

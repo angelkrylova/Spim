@@ -7,7 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Template</title>
-    
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
     <style type="text/css">
 
       table {
@@ -85,6 +86,28 @@
 					max-width: 100% !important;
 				}
       }
+
+      :root {
+        color-scheme: light dark;
+        supported-color-schemes: light dark;
+      } 
+
+     @media (prefers-color-scheme: dark) {
+        table,
+        td {
+          background-color: transparent !important;
+        }
+
+        h1,поду
+        h2,
+        p, a, span {
+          color: #ffffff !important;
+        }
+        
+        p.light_dark {
+          color: #0f0f0f!important;
+        }
+      }
     </style>
     <!--[if (gte mso 9) | (IE)]>
       <style type="text/css">
@@ -124,7 +147,7 @@
  
           <!-- Section: text on the background of the picture -->
           <tr>
-            <td align="center" background="https://i.ibb.co/HL90gK7j/image.png" bgcolor="#ffffff" valign="top" style="background-position: center; background-repeat: no-repeat; background-size: cover; padding: 17px 10px 20px 10px;">
+            <td align="center" background="https://i.ibb.co/HL90gK7j/image.png" valign="top" style="background-color: #ffffff; background-position: center; background-repeat: no-repeat; background-size: cover; padding: 17px 10px 20px 10px;">
               <!--[if (gte mso 9) | (IE)]>
               <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false">
                 <v:fill type="frame" src="https://i.ibb.co/HL90gK7j/image.png" />
@@ -180,7 +203,7 @@
                     <table border="0" cellpadding="0" cellspacing="0" role="presentation">
                       <tr>
                         <td align="center" style="padding: 30px 0 26px 0;">
-                          <p style="margin: 0;font-size: 42px; font-weight: 800;line-height: 40px;text-transform: uppercase;color: #000000;">
+                          <p style="margin: 0;font-size: 42px; font-weight: 800;line-height: 40px;text-transform: uppercase;color: #000000;" class="light_dark">
                             Финальная <br/>
                             распродажа <br/>
                             этого лета!</p>
@@ -207,7 +230,7 @@
                             </tr>
                             <tr>
                               <td align="center" style="padding-bottom: 10px;">
-                                <p style="margin: 0;font-weight: 800;font-size: 40px;line-height: 100%;">10%</p>
+                                <p style="margin: 0;font-weight: 800;font-size: 40px;line-height: 100%;" class="light_dark">10%</p>
                                 <span style="font-weight: 400;font-size: 14px;line-height: 100%;">до 19:00</span>
                               </td>
                             </tr>
@@ -230,7 +253,7 @@
                             </tr>
                             <tr>
                               <td align="center"  style="padding-bottom: 10px;">
-                                <p style="margin: 0;font-weight: 800;font-size: 40px;line-height: 100%;">8% </p>
+                                <p style="margin: 0;font-weight: 800;font-size: 40px;line-height: 100%;" class="light_dark">8% </p>
                                   <span style="font-weight: 400;font-size: 14px;line-height: 100%;">до 22:00</span>
                               </td>
                             </tr>
@@ -253,7 +276,7 @@
                             </tr>
                             <tr>
                               <td align="center" style="padding-bottom: 10px;">
-                                <p style="margin: 0;font-weight: 800;font-size: 40px;line-height: 100%;">5%</p>
+                                <p style="margin: 0;font-weight: 800;font-size: 40px;line-height: 100%;" class="light_dark">5%</p>
                                   <span style="font-weight: 400;font-size: 14px;line-height: 100%;">до 00:00</span>
                               </td>
                             </tr>
@@ -269,11 +292,11 @@
                   </td>
                 </tr>
                 <tr>
-                  <td>
-                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                  <td align="center">
+                    <table border="0" cellpadding="0" cellspacing="0" role="presentation">
                       <tr>
                         <td align="center" style="padding: 10px 10px 0px 10px;" class="mobile-col-padding">
-                          <p style="margin: 0;font-weight: 400;font-size: 14px;line-height: 100%;color: #2e2e2e;">Промокод</p>
+                          <p style="margin: 0;font-weight: 400;font-size: 14px;line-height: 100%;color: #2e2e2e;" class="light_dark">Промокод</p>
                         </td>
                       </tr>
                       </table>
@@ -283,8 +306,8 @@
                   <td align="center" style="padding: 8px 0 15px 0;" class="mobile-col-padding">
                     <table border="0" cellpadding="0" cellspacing="0" role="presentation">
                       <tr>
-                        <td align="center" style="padding: 11px 20px 7px 20px;border: 1px dashed #000000;" class="mobile-col-padding">
-                          <p style="margin: 0;font-weight: 700;font-size: 28px;line-height: 100%;color: #2e2e2e;">GOODBYELETO</p>
+                        <td align="center" style="padding: 11px 20px 7px 20px;border: 1px dashed #000000;" class="mobile-col-padding border">
+                          <p style="margin: 0;font-weight: 700;font-size: 28px;line-height: 100%;color: #2e2e2e;" class="light_dark">GOODBYELETO</p>
                         </td>
                       </tr>
                       </table>
@@ -338,7 +361,7 @@
 
           <!-- three command section  -->
           <tr>
-            <td align="center" style="padding: 20px 0 28px 0;" class="mobile-padding three-columns">
+            <td align="center" style="padding: 20px 0 28px 0; font-size: 0;" class="mobile-padding three-columns">
                 <!--[if (gte mso 9) | (IE)]>
                   <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
                   <tr>
@@ -415,7 +438,7 @@
           </tr>
             
           <tr>
-            <td align="center" style="padding: 0 28px;" class="mobile-padding three-columns">
+            <td align="center" style="padding: 0 28px; font-size: 0;" class="mobile-padding three-columns">
                 <!--[if (gte mso 9) | (IE)]>
                   <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
                   <tr>
@@ -527,16 +550,16 @@
         <![endif]-->
     </center>
 
-    <center style="width: 100%;table-layout: fixed;background-color: #dde0e1;padding-top: 17px; padding-bottom: 23px;">
+    <center style="width: 100%;table-layout: fixed;background-color: #dde0e1; padding-bottom: 23px;">
         <!--[if (gte mso 9) | (IE)]>
           <table width="600" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
           <tr>
           <td>
         <![endif]-->
-        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: initial;color: #000000;Margin:0;padding:0;max-width: 600px;width:100%;font-family: 'Inter', Arial, sans-serif;">
+        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="color: #000000;Margin:0;padding:0;max-width: 600px;width:100%;font-family: 'Inter', Arial, sans-serif;">
           <!-- end section  -->
            <tr>
-            <td align="left" style="padding: 0 28px;" class="mobile-padding two-columns">
+            <td align="left" style="padding: 17px 28px 0 28px;" class="mobile-padding two-columns">
               <!--[if (gte mso 9) | (IE)]>
                 <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
                 <tr>
@@ -544,7 +567,7 @@
               <![endif]-->
               <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align: middle;width: 100%;max-width: 270px;display: inline-block;">
                 <tr>
-                  <td style="padding: 0 20px 15px 25px;" class="mobile-col-padding">
+                  <td style="padding: 0 20px 15px 20px;" class="mobile-col-padding">
                     <table border="0" cellpadding="0" cellspacing="0" role="presentation">
                       <tr>
                         <td style="padding-right: 13px;">
@@ -574,9 +597,9 @@
                 </td>
                 <td>
               <![endif]-->
-              <table border="0" cellpadding="0" cellspacing="0" role="presentation" class="column" style="vertical-align: middle;width: 100%;max-width: 270px;display: inline-block;">
+              <table border="0" cellpadding="0" cellspacing="0" role="presentation" class="column" style="vertical-align: middle;width: 100%;max-width: 220px;display: inline-block;">
                 <tr>
-                  <td style="padding: 0 60px 15px 60px;" class="mobile-col-padding">
+                  <td style="padding: 0 14px 15px 50px;" class="mobile-col-padding">
                     <table border="0" cellpadding="0" cellspacing="0" role="presentation">
                       <tr>
                         <td>
@@ -595,8 +618,6 @@
             </td>
           </tr>
 
-          
-
           <tr>
             <td>
               <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
@@ -611,7 +632,7 @@
           </tr>
 
           <tr>
-            <td align="center" style="padding: 0 20px;" class="mobile-padding two-columns">
+            <td align="center" style="padding: 0 20px 20px 20px;" class="mobile-padding two-columns">
                 <!--[if (gte mso 9) | (IE)]>
                   <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
                   <tr>
